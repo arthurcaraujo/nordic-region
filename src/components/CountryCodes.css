@@ -1,0 +1,42 @@
+:root {
+    --table-background-even: rgb(220, 200, 200);
+    --table-background-odd: #fff;
+    --table-background-hover: rgb(190, 170, 170);
+    --table-border: #919191;
+    --table-heading-background: rgb(0, 0, 100);
+    --table-heading-color: #fff;
+}
+
+table {
+    border-collapse: collapse;
+    font-size: 0.85rem;
+    max-width: 700px;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid var(--table-border);
+    padding: 5px;
+    text-align: center;
+}
+
+.country-cell {
+    text-align: left;
+}
+
+thead tr {
+    background-color: var(--table-heading-background);
+    color: var(--table-heading-color);
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--table-background-even);
+}
+
+tbody tr:nth-child(odd) {
+    background-color: var(--table-background-odd);
+}
+
+tbody tr:hover {
+    background-color: var(--table-background-hover);
+}

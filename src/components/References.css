@@ -1,0 +1,14 @@
+:root {
+    --reference: rgb(0, 0, 200);
+    --reference-hover: rgb(0, 0, 150);
+}
+
+#references a {
+    color: var(--reference);
+    text-decoration: none;
+}
+
+#references a:hover {
+    color: var(--reference-hover);
+    text-decoration: underline;
+}

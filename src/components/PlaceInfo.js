@@ -2,7 +2,7 @@ import "./PlaceInfo.css";
 
 export default function PlaceInfo({props}) {
     return (
-        <section>
+        <section className="content-section" id={props.id}>
             <h2>{props.countryOrRegion}</h2>
 
             <div className="data-group">
@@ -35,17 +35,19 @@ export default function PlaceInfo({props}) {
 
                 <div className={`${props.id} flag`}>
                     {props.flagClasses.map(flagClass =>
-                        <div className={flagClass}></div>
+                        <div className={flagClass} key={flagClass}></div>
                     )}
-                    <div class="flagpole">
-                        <div class="ornament"></div>
-                        <div class="base"></div>
+                    <div className="flagpole">
+                        <div className="ornament"></div>
+                        <div className="base"></div>
                     </div>
                 </div>
             </div>
 
-            {props.description.map(paragraph =>
-                <p>{paragraph}</p>
+            {props.description.map((paragraph, index) =>
+                <p key={index}>
+                    {paragraph}
+                </p>
             )}
         </section>
     )
