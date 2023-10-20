@@ -63,7 +63,7 @@ h1 {
     background-color: rgb(150, 0, 0);
     overflow-x: hidden;
     overflow-y: scroll;
-    transition: border 0.7s, height 0.7s;
+    transition: border 0.5s, height 0.5s;
     width: 100%;
 }
 
@@ -114,11 +114,11 @@ h1 {
         left: 0;
         position: fixed;
         top: 0;
-        width: 35%;
+        width: 17rem;  /*  272px => 17rem  */
     }
 
     #navbar {
-        grid-template-columns: 3.5rem calc(100% - 3.5rem);
+        grid-template-columns: 3.5rem 13.5rem;
         grid-template-rows: 4rem;
         justify-content: space-between;
     }
@@ -130,7 +130,6 @@ h1 {
     }
 
     h1 {
-        font-size: 1.7rem;
         width: 100%;
     }
 
@@ -145,5 +144,37 @@ h1 {
 
     #nav-list > li:last-child {
         margin-bottom: 200px;
+    }
+}
+
+@media (min-width: 992px) {
+    header {
+        width: 18.75rem;  /*  300px => 18.75rem  */
+    }
+
+    #navbar {
+        grid-template-columns: 4rem 14.75rem;
+    }
+
+    h1 {
+        font-size: 1.7rem;
+    }
+
+    #nav-list a {
+        padding: 0.5rem 1rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    header {
+        width: 20rem;  /*  320px => 20rem  */
+    }
+
+    #navbar {
+        grid-template-columns: 4rem 16rem;
+    }
+
+    #nav-list li {
+        font-size: 1.2rem;
     }
 }

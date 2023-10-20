@@ -52,8 +52,8 @@ export default function Header() {
                     onClick={() => setExpandNavbar(!expandNavbar)}
                     style={{
                         border: (expandNavbar && !mediaQuery.matches) ||
-                                (mediaQuery.matches) ? "2px solid rgb(150, 0, 0)"
-                                : "0 solid rgb(150, 0, 0)",
+                                (mediaQuery.matches) ? "3px solid #300"
+                                : "0 solid #300",
                         height: (expandNavbar && !mediaQuery.matches) ? "50vh"
                                 : (mediaQuery.matches) ? "100%"
                                 : "0"

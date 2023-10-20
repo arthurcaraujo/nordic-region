@@ -3,7 +3,9 @@ import "./Footer.css";
 export default function Footer() {
     return (
         <footer>
-            Arthur C. Araújo - {new Date().getFullYear()}
+            <a href="https://arthurcaraujo.github.io/">
+                Arthur C. Araújo
+            </a> - {new Date().getFullYear()}
         </footer>
     )
 }

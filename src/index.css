@@ -18,7 +18,23 @@ h1, h2 {
 @media (min-width: 768px) {
     #root {
         display: grid;
-        grid-template-columns: 35% 65%;
+        grid-template-columns: 17rem auto;  /*  272px => 17rem  */
         grid-template-rows: auto auto;
+    }
+}
+
+@media (min-width: 992px) {
+    #root {
+        grid-template-columns: 18.75rem auto;  /*  300px => 18.75rem  */
+    }
+}
+
+@media (min-width: 1200px) {
+    body {
+        font-size: 1.1rem;
+    }
+
+    #root {
+        grid-template-columns: 20rem auto;  /*  320px => 20rem  */
     }
 }
